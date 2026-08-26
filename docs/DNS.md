@@ -62,6 +62,15 @@ direction.
 
 ## HTTPS
 
-GitHub Pages auto-provisions Let's Encrypt certificates for both hostnames
-after DNS propagates; enable "Enforce HTTPS" on the Pages site once the
-certificate is issued.
+**Done 2026-08-26.** Let's Encrypt certificate issued for both
+`www.exceldesign.us` and `exceldesign.us` (verified: full-chain validation
+passes, SAN covers both hosts), and "Enforce HTTPS" is enabled — `http://`
+now 301s to `https://`.
+
+Gotcha: because the custom domain was bound to the Pages site *before* the
+DNS records existed, GitHub never created the certificate request — the
+`https_certificate` field stayed absent for 30+ minutes while the health
+check reported the domain fully valid and eligible. Fix: remove and re-add
+the custom domain (API `PUT /pages` with `"cname": null`, then the domain
+again). The certificate object appeared immediately and was approved within
+a minute.
