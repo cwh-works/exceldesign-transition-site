@@ -6,8 +6,16 @@ Modeled on the Short Creek Realty repoint of 2026-07-10
 
 ## Status
 
-**PROPOSED 2026-08-26 — awaiting Charles's approval. Not yet applied.**
-Update this section when the change is made.
+**APPLIED 2026-08-26** with Charles's approval, via the `gddy` CLI
+(Excel/Realty account, dry-run first). Verified same day: authoritative NS
+serves the four GitHub A records and the `www` CNAME; the page serves with
+`Server: GitHub.com` and the apex 301s to `www`.
+
+Gotcha hit during the change: GoDaddy's API refused `gddy dns set` on the
+existing `CNAME www` ("already has conflicting CNAME data") even though the
+dry-run planned a clean replace. `gddy dns delete` + `gddy dns add` worked.
+The A-record `set` (replacing the special `"Parked"` value) had no such
+problem.
 
 ## Planned change (web records only)
 
