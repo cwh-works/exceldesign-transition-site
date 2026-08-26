@@ -1,0 +1,52 @@
+# DNS Configuration — exceldesign.us
+
+Domain registered and DNS-hosted at **GoDaddy** (Excel/Realty account).
+Modeled on the Short Creek Realty repoint of 2026-07-10
+(`shortcreek-realty-site/docs/DNS.md`).
+
+## Status
+
+**PROPOSED 2026-08-26 — awaiting Charles's approval. Not yet applied.**
+Update this section when the change is made.
+
+## Planned change (web records only)
+
+| Record | Before (GoDaddy parking / Websites + Marketing) | After |
+| --- | --- | --- |
+| `A @` | `3.33.130.190` — remove | `185.199.108.153` |
+| `A @` | `15.197.148.33` — remove | `185.199.109.153` |
+| `A @` | — | `185.199.110.153` |
+| `A @` | — | `185.199.111.153` |
+| `CNAME www` | current GoDaddy default (verify live value before editing) | `cwh-works.github.io.` |
+
+`185.199.108–111.153` are GitHub Pages' anycast IPs. `www.exceldesign.us` is
+the primary domain on the Pages site (via this repo's `CNAME` file); GitHub
+redirects the apex to `www`. The old GoDaddy Websites + Marketing Free site
+stays in the account but is disconnected from the domain once these records
+change.
+
+## What must NOT change — email and verification
+
+These keep Google Workspace email and domain verification working. Never
+delete or modify them when editing DNS:
+
+| Record | Value | Purpose |
+| --- | --- | --- |
+| `MX @` | `smtp.google.com.` (priority 1) | Google Workspace mail delivery |
+| `TXT @` | `v=spf1 include:_spf.google.com ~all` | SPF (anti-spoofing) |
+| `TXT @` | `google-site-verification=…` | Google domain verification |
+| `NS @` | `ns75/ns76.domaincontrol.com` | GoDaddy nameservers |
+| `CNAME _domainconnect` | `_domainconnect.gd.domaincontrol.com.` | GoDaddy Domain Connect |
+
+## Rollback
+
+Delete the four `A @` records and re-connect the domain to the GoDaddy
+Websites + Marketing site (GoDaddy recreates its records); restore
+`CNAME www` to its previous value. Email records need no changes in either
+direction.
+
+## HTTPS
+
+GitHub Pages auto-provisions Let's Encrypt certificates for both hostnames
+after DNS propagates; enable "Enforce HTTPS" on the Pages site once the
+certificate is issued.
