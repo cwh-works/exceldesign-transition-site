@@ -24,7 +24,7 @@ GitHub login (`charles403`), so `git push` to the existing repo worked without `
 that needs the GitHub API — creating the private `scs-social-render` repo (D3), renaming this
 repo, changing Pages settings — is left for Charles. See "Open items".
 
-**D3. Step 0 done locally; the private GitHub repo is not yet created.** The whole
+**D3. Step 0 done; private repo created the same day.** The whole
 `Brand Systems\short-creek-spirits\` folder (design-system package *and* `render/`) moved to
 `C:\Users\cwhwo\scs-social-render\`, `git init` + initial commit done (24 files, commit
 `561a832`), `MOVED.md` left at the old vault path. `gh repo create --private` could not run
@@ -57,9 +57,7 @@ number, board ID, street address fragment, or phone-number pattern appears.
 explicitly instructs "note the firm also works in southern Nevada (Mesquite)". The prompt is
 the more recent authority, so it is in the "Place" pillar.
 
-**D8. Rename year is not stated.** The profile and prompt give the 2006 start as Excel Civil
-Design but no date for the change to Excel Design Associates, so the timeline's middle beat is
-labelled "Growth", not a year. Do not add a year without a source.
+**D8. Rename year: 2013 (resolved 2026-09-05).** The first build labelled the middle beat "Growth" because neither the profile nor the prompt gave a date. Charles then supplied the Utah amendment record: Excel Civil Design, LC registered 2006-01-13; renamed Excel Design Associates, LC effective 2013-01-17 (adopted 2013-01-03). Record filed on the Shared Drive at `01_Company_Management\04_Licensing_and_Registrations\EDA_Formation_Utah_Name_Change_Amendment_RECORD_2013-01-17.pdf`. The timeline now reads 2006 → 2013 → Now and the copy says "In January 2013 we became Excel Design Associates".
 
 **D9. Service groupings.** The fifteen services in the profile are grouped into five headings
 (site and land development · grading, drainage and stormwater · water and sewer · streets and
@@ -70,11 +68,7 @@ extensions; school and public-facility projects). Nothing was added that is not 
 **D10. Entity name.** "Excel Design Associates" in body copy, "© 2026 Excel Design Associates,
 LC" in the footer, per the prompt.
 
-**D11. Canonical URL is `https://exceldesign.us/`** as the prompt specified, even though the
-Pages primary domain is `www.exceldesign.us` and the apex 301s to `www`. Canonical, OG URL and
-sitemap all use the apex form the prompt gave; GitHub handles the redirect. If Charles prefers
-the `www` canonical (which is what the browser bar shows), change lines 10, 15 and 16 of
-`index.html` and `sitemap.xml` — a two-minute edit.
+**D11. Canonical URL is `https://www.exceldesign.us/` (changed 2026-09-05, same day).** The first build used the apex form the prompt gave. Charles chose `www` because it is the Pages primary domain (the apex 301s to it) and what the browser bar shows. Canonical, `og:url`, `og:image`, `sitemap.xml` and the `Sitemap:` line in `robots.txt` all use `www` now.
 
 **D12. Brand line.** The brand standard's primary line is "Local Knowledge. Engineering
 Leadership." The prompt overrides this for the rebuild page with "Building Purpose and

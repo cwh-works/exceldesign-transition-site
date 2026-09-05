@@ -72,17 +72,9 @@ in `favicon.svg`; `favicon-32.png` and `og-image.png` are rendered from it by `t
 When the final identity arrives: replace the two inline `<svg>` blocks and `favicon.svg`, update
 the SVG in `tools/shoot.mjs`, run `npm run shoot`, push.
 
-## One-time items still needing Charles (need GitHub sign-in)
+## Optional — rename the repo (`gh` is installed and signed in)
 
 ```powershell
-winget install --id GitHub.cli -e
-gh auth login                                  # GitHub.com → HTTPS → browser; use the cwh-works owner account
-
-# 1. Step 0 of the prompt — create the private repo for the Spirits render pipeline and push
-cd C:\Users\cwhwo\scs-social-render
-gh repo create scs-social-render --private --source . --remote origin --push
-
-# 2. Optional — rename the site repo now that it is no longer a transition page
 gh repo rename eda-website --repo cwh-works/exceldesign-transition-site
 git -C C:\Users\cwhwo\eda-website remote set-url origin https://github.com/cwh-works/eda-website.git
 ```

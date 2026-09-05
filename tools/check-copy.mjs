@@ -26,7 +26,7 @@ for (const re of forbidden) {
 const required = [
   "PO Box 190", "Colorado City, AZ 86021", "charles@exceldesign.us",
   "Licensed professional engineer — Utah, Arizona, Nevada", "© 2026 Excel Design Associates, LC",
-  "Building Purpose and Community, by", "Better Together", "January 2006", "Excel Civil Design", "Mesquite",
+  "Building Purpose and Community, by", "Better Together", "January 2006", "January 2013", "Excel Civil Design", "Mesquite",
 ];
 for (const s of required) { if (text.includes(s)) ok(`present "${s}"`); else fail(`missing "${s}"`); }
 
