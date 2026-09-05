@@ -27,8 +27,9 @@ repo, changing Pages settings — is left for Charles. See "Open items".
 **D3. Step 0 done; private repo created the same day.** The whole
 `Brand Systems\short-creek-spirits\` folder (design-system package *and* `render/`) moved to
 `C:\Users\cwhwo\scs-social-render\`, `git init` + initial commit done (24 files, commit
-`561a832`), `MOVED.md` left at the old vault path. `gh repo create --private` could not run
-(D2). One command remains for Charles, in DEPLOY.md.
+`561a832`), `MOVED.md` left at the old vault path. `gh repo create --private` could not run in the first pass (D2); after Charles installed and signed
+in to `gh`, the repo was created and pushed the same day: <https://github.com/cwh-works/scs-social-render>
+(private, under the `cwh-works` org like the site repos).
 
 **D4. `site/` is the repo root.** GitHub Pages serves this repo from the root and the Pages
 source cannot be changed without the API (D2), so the site files live at the repo root
