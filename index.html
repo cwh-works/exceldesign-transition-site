@@ -1,169 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#B3261E">
-<meta name="description" content="Excel Design Associates — Civil Engineering, Land Development, Public Infrastructure. Our site is temporarily under construction while we refresh our brand.">
-<title>Excel Design Associates</title>
-<link rel="canonical" href="https://www.exceldesign.us/">
+<title>Excel Design Associates — Civil engineering, Short Creek</title>
+<meta name="description" content="Excel Design Associates is a principal-led civil engineering practice based in the Short Creek community — Colorado City, Arizona and Hildale, Utah — serving Utah, Arizona and Nevada. Building Purpose and Community, by Design.">
+<link rel="canonical" href="https://exceldesign.us/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Excel Design Associates">
-<meta property="og:title" content="Excel Design Associates">
-<meta property="og:description" content="Civil Engineering · Land Development · Public Infrastructure. Our site is temporarily under construction while we refresh our brand.">
-<meta property="og:url" content="https://www.exceldesign.us/">
-<link rel="icon" href="data:,">
+<meta property="og:title" content="Excel Design Associates — Building Purpose and Community, by Design.">
+<meta property="og:description" content="A principal-led civil engineering practice based in the Short Creek community — Colorado City, Arizona and Hildale, Utah — serving Utah, Arizona and Nevada.">
+<meta property="og:url" content="https://exceldesign.us/">
+<meta property="og:image" content="https://exceldesign.us/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Excel Design Associates mark and the line Building Purpose and Community, by Design.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --leadership-red: #B3261E;
-    --deep-canyon-red: #7D1F17;
-    --charcoal: #25282B;
-    --slate: #60676D;
-    --canyon-clay: #9A4F3D;
-    --sandstone: #C9B79C;
-    --desert-white: #F4F1EB;
-    --white: #FFFFFF;
-    --heading-stack: 'Aptos Display', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    --body-stack: 'Aptos', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-
-  html { -webkit-text-size-adjust: 100%; }
-
-  body {
-    margin: 0;
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    background: var(--desert-white);
-    color: var(--charcoal);
-    font-family: var(--body-stack);
-    font-size: 1.0625rem;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  ::selection { background: var(--leadership-red); color: var(--white); }
-
-  a {
-    color: var(--leadership-red);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-  }
-  a:hover { color: var(--deep-canyon-red); }
-
-  .topbar {
-    height: 4px;
-    background: var(--leadership-red);
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: clamp(3rem, 9vh, 5.5rem) 1.5rem;
-  }
-
-  .masthead {
-    /* Wide tracking adds an invisible space after the last letter of each
-       line; the matching padding-left keeps the glyphs optically centered. */
-    --track: clamp(0.14em, 0.1em + 0.5vw, 0.24em);
-    margin: 0;
-    padding-left: var(--track);
-    font-family: var(--heading-stack);
-    font-weight: 700;
-    font-size: clamp(1.25rem, 0.95rem + 1.6vw, 1.75rem);
-    line-height: 1.35;
-    letter-spacing: var(--track);
-    text-transform: uppercase;
-    text-wrap: balance;
-    color: var(--charcoal);
-  }
-
-  .descriptor {
-    margin: 0.9rem 0 0;
-    font-size: clamp(0.8125rem, 0.76rem + 0.3vw, 0.9375rem);
-    letter-spacing: 0.06em;
-    color: var(--slate);
-  }
-
-  .notice { margin-top: clamp(3.5rem, 9vh, 5.5rem); }
-
-  .accent-rule {
-    width: 3.5rem;
-    height: 3px;
-    margin: 0 auto 2rem;
-    background: var(--leadership-red);
-  }
-
-  .headline {
-    margin: 0 0 1.4rem;
-    font-family: var(--heading-stack);
-    font-weight: 700;
-    font-size: clamp(1.9rem, 1.35rem + 2.8vw, 2.9rem);
-    line-height: 1.12;
-    letter-spacing: -0.01em;
-    text-wrap: balance;
-    color: var(--charcoal);
-  }
-
-  .body-copy {
-    max-width: 65ch;
-    margin: 0 auto;
-    color: var(--charcoal);
-  }
-
-  .contact {
-    margin: 2.25rem 0 0;
-    color: var(--charcoal);
-  }
-
-  footer {
-    border-top: 1px solid var(--sandstone);
-    padding: 1.5rem 1.5rem 1.75rem;
-    text-align: center;
-    font-size: 0.8125rem;
-    color: var(--slate);
-  }
-  footer p { margin: 0; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-
+<a class="skip" href="#main">Skip to content</a>
 <div class="topbar" aria-hidden="true"></div>
 
-<main>
-  <header>
-    <h1 class="masthead">Excel Design Associates</h1>
-    <p class="descriptor">Civil&nbsp;Engineering&nbsp;· Land&nbsp;Development&nbsp;· Public&nbsp;Infrastructure</p>
-  </header>
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="#top" aria-label="Excel Design Associates — top of page">
+      <svg class="mark" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="56" height="56" fill="none" stroke="currentColor" stroke-width="5"/>
+        <path d="M18 18 L46 46 M46 18 L18 46" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square"/>
+      </svg>
+      <span class="brand__text">
+        <span class="wordmark">Excel Design Associates</span>
+        <span class="descriptor">Civil engineering · Colorado City, Arizona · Hildale, Utah</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a href="#story">Story</a>
+      <a href="#approach">Approach</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="notice">
-    <div class="accent-rule" aria-hidden="true"></div>
-    <h2 class="headline">We&rsquo;re refreshing our brand.</h2>
-    <p class="body-copy">Excel Design Associates is updating its brand identity. While that work is completed, this site is temporarily under construction&nbsp;&mdash; the full site is coming soon.</p>
+<main id="main">
 
-    <p class="contact">For inquiries, contact <a href="mailto:info@exceldesign.us">info@exceldesign.us</a>.</p>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow">Civil engineering · Short Creek</p>
+      <h1>Building Purpose and Community, by&nbsp;Design.</h1>
+      <p class="lede">Excel Design Associates is a civil engineering practice based in the Short Creek community — Colorado City, Arizona and Hildale, Utah — serving Utah, Arizona and Nevada. We are rebuilding our brand, and this page is the first piece of it.</p>
+      <p class="cta-row">
+        <a class="button" href="mailto:charles@exceldesign.us">Email charles@exceldesign.us</a>
+      </p>
+    </div>
   </section>
+
+  <section class="story" id="story">
+    <div class="wrap">
+      <h2>Our story</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__when">2006</span>
+          <h3>Excel Civil Design</h3>
+          <p>We started in January 2006 as Excel Civil Design, doing civil work for the people and projects around us.</p>
+        </li>
+        <li>
+          <span class="timeline__when">Growth</span>
+          <h3>Excel Design Associates</h3>
+          <p>As the work grew, so did the name. Excel Design Associates took on subdivisions, water and sewer systems, streets and public infrastructure across the region.</p>
+        </li>
+        <li>
+          <span class="timeline__when">Now</span>
+          <h3>Next steps</h3>
+          <p>We have learned a lot since then — about engineering, about people, and about this region. Now we are working on our next steps, and learning fast.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="pillars" id="approach">
+    <div class="wrap">
+      <h2>People, Place, Possibility</h2>
+      <p class="section-intro">Our approach reflects our passion. In practice it means three things for a client.</p>
+      <div class="pillars__grid">
+        <article class="pillar">
+          <h3>People</h3>
+          <p>Engineering is done with people, not to them. You work directly with the principal engineer, get straight answers, and know who is accountable for the work from concept through construction.</p>
+        </article>
+        <article class="pillar">
+          <h3>Place</h3>
+          <p>We live and work here. Our practice is grounded in Colorado City, Hildale and Centennial Park, in northern Mohave County, Arizona and southern Utah, and we also work in southern Nevada, including Mesquite. We know the ground, the agencies and the constraints, and that shows up in the design.</p>
+        </article>
+        <article class="pillar">
+          <h3>Possibility</h3>
+          <p>Good engineering opens options. We look for the practical path that makes a site, a subdivision or a utility extension workable — technically sound, permittable and constructible on a real budget and schedule.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="section-intro">Civil engineering for land development, utilities and public infrastructure.</p>
+      <div class="services__grid">
+        <div class="service">
+          <h3>Site and land development</h3>
+          <ul>
+            <li>Commercial and residential site plans</li>
+            <li>Subdivision design</li>
+            <li>Land-development feasibility and due diligence</li>
+            <li>ADA accessibility</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Grading, drainage and stormwater</h3>
+          <ul>
+            <li>Grading and drainage</li>
+            <li>Stormwater management</li>
+            <li>Erosion control</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Water and sewer</h3>
+          <ul>
+            <li>Water distribution systems</li>
+            <li>Fire-flow analysis</li>
+            <li>Sanitary sewer systems</li>
+            <li>Utility extensions</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Streets and public infrastructure</h3>
+          <ul>
+            <li>Streets and pavement</li>
+            <li>Public works and municipal infrastructure</li>
+            <li>School and public-facility projects</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Documents, reports and construction</h3>
+          <ul>
+            <li>Construction documents</li>
+            <li>Engineering reports and calculations</li>
+            <li>Utility coordination</li>
+            <li>Construction administration and field coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="together" id="together">
+    <div class="wrap">
+      <p class="eyebrow">How we work</p>
+      <h2>Better Together</h2>
+      <p>Complex projects succeed through coordination — among owners, agencies, utilities, designers, contractors and communities. Excel Design Associates is principal-led: the engineer who plans the work is the one who does it, stands behind it, and coordinates the people and decisions needed to move it forward. We pair that direct involvement with long-standing local knowledge of the region and its jurisdictions, so the path through permitting and construction is clear and defensible before the first drawing is issued.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <dl class="contact__list">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:charles@exceldesign.us">charles@exceldesign.us</a></dd>
+        </div>
+        <div>
+          <dt>Mail</dt>
+          <dd><span class="mono">PO Box 190<br>Colorado City, AZ 86021</span></dd>
+        </div>
+        <div>
+          <dt>Licensing</dt>
+          <dd>Licensed professional engineer — Utah, Arizona, Nevada.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  <p>&copy; 2026 Excel Design Associates. All rights reserved.</p>
+<footer class="footer">
+  <div class="wrap footer__row">
+    <p class="footer__brand">
+      <svg class="mark mark--small" viewBox="0 0 64 64" width="20" height="20" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="56" height="56" fill="none" stroke="currentColor" stroke-width="5"/>
+        <path d="M18 18 L46 46 M46 18 L18 46" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square"/>
+      </svg>
+      <span>© 2026 Excel Design Associates, LC</span>
+    </p>
+    <p class="footer__note">Brand and site under construction — updated <time datetime="2026-09-05">2026-09-05</time>.</p>
+  </div>
 </footer>
-
 </body>
 </html>
